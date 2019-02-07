@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="google" content="notranslate">
     <meta http-equiv="Content-Language" content="en">
-    <title>TokenRatesController - Documentation</title>
+    <title>CachedBalancesController - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -37,7 +37,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">TokenRatesController</h1>
+    <h1 class="page-title">CachedBalancesController</h1>
     
 
     
@@ -50,11 +50,11 @@
 <header>
     
         <h2>
-        TokenRatesController
+        CachedBalancesController
         </h2>
         
-            <div class="class-description"><p>A controller that polls for token exchange
-rates based on a user's current token list</p></div>
+            <div class="class-description"><p>Background controller responsible for maintaining
+a cache of account balances in local storage</p></div>
         
     
 </header>
@@ -68,7 +68,7 @@ rates based on a user's current token list</p></div>
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="TokenRatesController"><span class="type-signature"></span>new TokenRatesController<span class="signature">(config<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="CachedBalancesController"><span class="type-signature"></span>new CachedBalancesController<span class="signature">(opts<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
@@ -80,7 +80,7 @@ rates based on a user's current token list</p></div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line12">line 12</a>
+        <a href="controllers_cached-balances.js.html">controllers/cached-balances.js</a>, <a href="controllers_cached-balances.js.html#line15">line 15</a>
     </li></ul></dd>
     
 
@@ -120,7 +120,7 @@ rates based on a user's current token list</p></div>
 
 
 <div class="description">
-    <p>Creates a TokenRatesController</p>
+    <p>Creates a new controller instance</p>
 </div>
 
 
@@ -160,13 +160,13 @@ rates based on a user's current token list</p></div>
 
         <tr>
             
-                <td class="name"><code>config</code></td>
+                <td class="name"><code>opts</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type"><a href="global.html#CachedBalancesOptions">CachedBalancesOptions</a></span>
 
 
             
@@ -186,7 +186,7 @@ rates based on a user's current token list</p></div>
 
             
 
-            <td class="description last"><p>Options to configure controller</p></td>
+            <td class="description last"><p>Controller configuration parameters</p></td>
         </tr>
 
     
@@ -222,217 +222,6 @@ rates based on a user's current token list</p></div>
     
 
     
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="interval"><span class="type-signature"></span>interval<span class="type-signature"> :Number</span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line52">line 52</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Number</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="preferences"><span class="type-signature"></span>preferences<span class="type-signature"> :Object</span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line61">line 61</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Object</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="tokens"><span class="type-signature"></span>tokens<span class="type-signature"> :Array</span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line72">line 72</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Array</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-
-        
-    
 
     
         <h3 class="subsection-title">Methods</h3>
@@ -442,7 +231,7 @@ rates based on a user's current token list</p></div>
 
     
 
-    <h4 class="name" id="updateExchangeRates"><span class="type-signature">(async) </span>updateExchangeRates<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="updateCachedBalances"><span class="type-signature">(async) </span>updateCachedBalances<span class="signature">(obj)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
 
     
 
@@ -454,7 +243,7 @@ rates based on a user's current token list</p></div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line28">line 28</a>
+        <a href="controllers_cached-balances.js.html">controllers/cached-balances.js</a>, <a href="controllers_cached-balances.js.html#line42">line 42</a>
     </li></ul></dd>
     
 
@@ -494,7 +283,8 @@ rates based on a user's current token list</p></div>
 
 
 <div class="description">
-    <p>Updates exchange rates for all tokens</p>
+    <p>Updates the cachedBalances property for the current network. Cached balances will be updated to those in the passed accounts
+if balances in the passed accounts are truthy.</p>
 </div>
 
 
@@ -507,6 +297,53 @@ rates based on a user's current token list</p></div>
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>obj</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The the recently updated accounts object for the current network</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -519,6 +356,26 @@ rates based on a user's current token list</p></div>
 
 
 
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void></span>
+
+
+    </dd>
+</dl>
+
+    
 
 
         

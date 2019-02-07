@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="google" content="notranslate">
     <meta http-equiv="Content-Language" content="en">
-    <title>TokenRatesController - Documentation</title>
+    <title>controllers/provider-approval.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -37,499 +37,183 @@
 
 <div id="main">
     
-    <h1 class="page-title">TokenRatesController</h1>
-    
-
-    
-
-
-
-
-<section>
-
-<header>
-    
-        <h2>
-        TokenRatesController
-        </h2>
-        
-            <div class="class-description"><p>A controller that polls for token exchange
-rates based on a user's current token list</p></div>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-
-    
-    <h2>Constructor</h2>
-    
-
-    <h4 class="name" id="TokenRatesController"><span class="type-signature"></span>new TokenRatesController<span class="signature">(config<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line12">line 12</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    <p>Creates a TokenRatesController</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>config</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>Options to configure controller</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-     
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="interval"><span class="type-signature"></span>interval<span class="type-signature"> :Number</span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line52">line 52</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Number</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="preferences"><span class="type-signature"></span>preferences<span class="type-signature"> :Object</span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line61">line 61</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Object</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="tokens"><span class="type-signature"></span>tokens<span class="type-signature"> :Array</span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line72">line 72</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Array</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-
-        
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    <h4 class="name" id="updateExchangeRates"><span class="type-signature">(async) </span>updateExchangeRates<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="controllers_token-rates.js.html">controllers/token-rates.js</a>, <a href="controllers_token-rates.js.html#line28">line 28</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description">
-    <p>Updates exchange rates for all tokens</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-
-    
-
-    
-</article>
-
-</section>
+    <h1 class="page-title">controllers/provider-approval.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const ObservableStore = require('obs-store')
+
+/**
+ * A controller that services user-approved requests for a full Ethereum provider API
+ */
+class ProviderApprovalController {
+  /**
+   * Determines if caching is enabled
+   */
+  caching = true
+
+  /**
+   * Creates a ProviderApprovalController
+   *
+   * @param {Object} [config] - Options to configure controller
+   */
+  constructor ({ closePopup, keyringController, openPopup, platform, preferencesController, publicConfigStore } = {}) {
+    this.approvedOrigins = {}
+    this.closePopup = closePopup
+    this.keyringController = keyringController
+    this.openPopup = openPopup
+    this.platform = platform
+    this.preferencesController = preferencesController
+    this.publicConfigStore = publicConfigStore
+    this.store = new ObservableStore({
+      providerRequests: [],
+    })
+
+    if (platform &amp;&amp; platform.addMessageListener) {
+      platform.addMessageListener(({ action = '', force, origin, siteTitle, siteImage }, { tab }) => {
+        if (tab &amp;&amp; tab.id) {
+          switch (action) {
+            case 'init-provider-request':
+              this._handleProviderRequest(origin, siteTitle, siteImage, force, tab.id)
+              break
+            case 'init-is-approved':
+              this._handleIsApproved(origin, tab.id)
+              break
+            case 'init-is-unlocked':
+              this._handleIsUnlocked(tab.id)
+              break
+            case 'init-privacy-request':
+              this._handlePrivacyRequest(tab.id)
+              break
+          }
+        }
+      })
+    }
+  }
+
+  /**
+   * Called when a tab requests access to a full Ethereum provider API
+   *
+   * @param {string} origin - Origin of the window requesting full provider access
+   * @param {string} siteTitle - The title of the document requesting full provider access
+   * @param {string} siteImage - The icon of the window requesting full provider access
+   */
+  _handleProviderRequest (origin, siteTitle, siteImage, force, tabID) {
+    this.store.updateState({ providerRequests: [{ origin, siteTitle, siteImage, tabID }] })
+    const isUnlocked = this.keyringController.memStore.getState().isUnlocked
+    if (!force &amp;&amp; this.approvedOrigins[origin] &amp;&amp; this.caching &amp;&amp; isUnlocked) {
+      this.approveProviderRequest(tabID)
+      return
+    }
+    this.openPopup &amp;&amp; this.openPopup()
+  }
+
+  /**
+   * Called by a tab to determine if an origin has been approved in the past
+   *
+   * @param {string} origin - Origin of the window
+   */
+  _handleIsApproved (origin, tabID) {
+    this.platform &amp;&amp; this.platform.sendMessage({
+      action: 'answer-is-approved',
+      isApproved: this.approvedOrigins[origin] &amp;&amp; this.caching,
+      caching: this.caching,
+    }, { id: tabID })
+  }
+
+  /**
+   * Called by a tab to determine if MetaMask is currently locked or unlocked
+   */
+  _handleIsUnlocked (tabID) {
+    const isUnlocked = this.keyringController.memStore.getState().isUnlocked
+    this.platform &amp;&amp; this.platform.sendMessage({ action: 'answer-is-unlocked', isUnlocked }, { id: tabID })
+  }
+
+  /**
+   * Called to check privacy mode; if privacy mode is off, this will automatically enable the provider (legacy behavior)
+   */
+  _handlePrivacyRequest (tabID) {
+    const privacyMode = this.preferencesController.getFeatureFlags().privacyMode
+    if (!privacyMode) {
+      this.platform &amp;&amp; this.platform.sendMessage({
+        action: 'approve-legacy-provider-request',
+        selectedAddress: this.publicConfigStore.getState().selectedAddress,
+      }, { id: tabID })
+      this.publicConfigStore.emit('update', this.publicConfigStore.getState())
+    }
+  }
+
+  /**
+   * Called when a user approves access to a full Ethereum provider API
+   *
+   * @param {string} tabID - ID of the target window that approved provider access
+   */
+  approveProviderRequest (tabID) {
+    this.closePopup &amp;&amp; this.closePopup()
+    const requests = this.store.getState().providerRequests
+    const origin = requests.find(request => request.tabID === tabID).origin
+    this.platform &amp;&amp; this.platform.sendMessage({
+      action: 'approve-provider-request',
+      selectedAddress: this.publicConfigStore.getState().selectedAddress,
+    }, { id: tabID })
+    this.publicConfigStore.emit('update', this.publicConfigStore.getState())
+    const providerRequests = requests.filter(request => request.tabID !== tabID)
+    this.store.updateState({ providerRequests })
+    this.approvedOrigins[origin] = true
+  }
+
+  /**
+   * Called when a tab rejects access to a full Ethereum provider API
+   *
+   * @param {string} tabID - ID of the target window that rejected provider access
+   */
+  rejectProviderRequest (tabID) {
+    this.closePopup &amp;&amp; this.closePopup()
+    const requests = this.store.getState().providerRequests
+    const origin = requests.find(request => request.tabID === tabID).origin
+    this.platform &amp;&amp; this.platform.sendMessage({ action: 'reject-provider-request' }, { id: tabID })
+    const providerRequests = requests.filter(request => request.tabID !== tabID)
+    this.store.updateState({ providerRequests })
+    delete this.approvedOrigins[origin]
+  }
+
+  /**
+   * Clears any cached approvals for user-approved origins
+   */
+  clearApprovedOrigins () {
+    this.approvedOrigins = {}
+  }
+
+  /**
+   * Determines if a given origin should have accounts exposed
+   *
+   * @param {string} origin - Domain origin to check for approval status
+   * @returns {boolean} - True if the origin has been approved
+   */
+  shouldExposeAccounts (origin) {
+    const privacyMode = this.preferencesController.getFeatureFlags().privacyMode
+    return !privacyMode || this.approvedOrigins[origin]
+  }
+
+  /**
+   * Tells all tabs that MetaMask is now locked. This is primarily used to set
+   * internal flags in the contentscript and inpage script.
+   */
+  setLocked () {
+    this.platform.sendMessage({ action: 'metamask-set-locked' })
+  }
+}
+
+module.exports = ProviderApprovalController
+</code></pre>
+        </article>
+    </section>
 
 
 
